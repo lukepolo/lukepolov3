@@ -2,7 +2,7 @@ import RouterInterface from "varie/lib/routing/RouterInterface";
 
 import middleware from "./middleware";
 import ErrorViews from "@views/errors";
-import Welcome from "@views/Welcome.vue";
+import Resume from "@views/Resume.vue";
 
 export default function($router: RouterInterface) {
   /*
@@ -11,7 +11,7 @@ export default function($router: RouterInterface) {
   |--------------------------------------------------------------------------
   |
   */
-  $router.route("/", Welcome);
+  $router.route("/", Resume);
 
   $router.route("*", ErrorViews.Error404);
 }
