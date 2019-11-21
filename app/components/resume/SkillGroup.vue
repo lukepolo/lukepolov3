@@ -1,6 +1,6 @@
 <template>
   <div class="mt-6">
-    <div class="text-gray-700">
+    <div class="text-gray-700 uppercase">
       {{ skillGroup }}
       <div class="bg-gray-500 h-1"></div>
     </div>

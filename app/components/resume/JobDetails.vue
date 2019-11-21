@@ -1,6 +1,6 @@
 <template>
   <div class="mb-6">
-    <div class="text-purple-500 flex">
+    <div class="text-orange-500 flex">
       <div class="flex-grow font-bold">{{ job.title }}</div>
       <div>{{ job.start_date }} - {{ job.end_date }}</div>
     </div>

@@ -141,7 +141,7 @@ export default {
       display: "Docker",
       link: "",
       enabled: true,
-      confidenceLevel: 8,
+      confidenceLevel: 6,
     },
     {
       display: "Vagrant",
