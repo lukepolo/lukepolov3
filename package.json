@@ -1,0 +1,31 @@
+{
+  "private": true,
+  "scripts": {
+    "analyze-dev": "npm run dev -- --analyze",
+    "analyze-prod": "npm run dev -- --analyze",
+    "inspect-dev": "npm run dev -- --inspect",
+    "inspect-prod": "npm run dev -- --inspect",
+    "dev-modern": "npm run dev -- --modern",
+    "prod-modern": "npm run prod -- --modern",
+    "dev": "cross-env TS_NODE_PROJECT=\"node_modules/varie-bundler/webpack-tsconfig.json\" webpack --env development --no-progress --hide-modules",
+    "prod": "cross-env TS_NODE_PROJECT=\"node_modules/varie-bundler/webpack-tsconfig.json\" webpack --env production --no-progress --hide-modules",
+    "watch": "cross-env TS_NODE_PROJECT=\"node_modules/varie-bundler/webpack-tsconfig.json\" webpack-dev-server --mode development --progress --hot"
+  },
+  "dependencies": {
+    "varie": "^0.12.0",
+    "vue": "^2.6.0",
+    "vue-router": "^3.0.0",
+    "vuex": "^3.1.0"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-pro": "^5.11.2",
+    "@vue/eslint-config-prettier": "^5.0.0",
+    "@vue/eslint-config-typescript": "^4.0.0",
+    "babel-eslint": "^10.0.0",
+    "eslint": "^6.6.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-vue": "^5.2.0",
+    "varie-bundler": "^2.0.8",
+    "vue-template-compiler": "^2.6.0"
+  }
+}

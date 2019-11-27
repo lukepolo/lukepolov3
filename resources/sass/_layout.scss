@@ -1,0 +1,35 @@
+// LAYOUT ==================================================
+// =========================================================
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+#app {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(20px, 1fr) minmax(350px, 1200px) minmax(
+      20px,
+      1fr
+    );
+  grid-template-rows: min-content min-content;
+  grid-template-areas: "ml content mr";
+  padding: 30px 0;
+  background-color: $color-background;
+  font-family: $font-family-body;
+  font-size: 0.87em;
+  line-height: 1.5em;
+
+  @include breakpoint(sm) {
+    grid-template-columns: 1fr;
+    grid-template-areas: "content";
+    padding: 0;
+    background-color: $color-background-content;
+  }
+}
