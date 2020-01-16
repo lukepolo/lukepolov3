@@ -1,6 +1,5 @@
 import ConfigInterface from "varie/lib/config/ConfigInterface";
 import ApplicationInterface from "varie/lib/foundation/ApplicationInterface";
-
 /*
 |--------------------------------------------------------------------------
 | App Globals
@@ -12,6 +11,5 @@ import ApplicationInterface from "varie/lib/foundation/ApplicationInterface";
 declare global {
   const $config: ConfigInterface;
   const $app: ApplicationInterface;
-
   type AnyClass = { new (): any };
 }
