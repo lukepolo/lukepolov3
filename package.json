@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-pro": "^5.12.0",
-    "varie": "^1.0.0",
+    "varie": "^1.0.1",
     "vue": "^2.6.11",
     "vue-router": "^3.1.5",
     "vuex": "^3.1.0"
