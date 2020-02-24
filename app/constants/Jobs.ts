@@ -10,7 +10,8 @@ export default [
       "Revamped process for bundling and deploying applications",
       "Designed and developed complex web applications that simplified the user's interactions",
       "Helped architect a new framework to build extensible applications",
-      "Maintained the framework and building tools centered on developer experience",
+      "Maintained frameworks and building tools centered on developer experience",
+      "Revamped CI/CD pipeline for docker applications",
     ],
     languages: "JavaScript, VueJS, Node, HTML, SCSS",
   },
@@ -22,7 +23,7 @@ export default [
     end_date: "November 2017",
     keyPoints: [
       "Developed web applications with complex business rules",
-      "Managed web application servers and deployment process",
+      "Managed web application servers and CI/CD Pipelines",
       "Used API driven development to build Laravel and Vue.js applications",
       "Directly worked with clients to provide the best possible solutions to fit their needs",
       "Responsible for building a team to use best practices of Agile and software development",
@@ -63,7 +64,7 @@ export default [
     start_date: "September 2013",
     end_date: "May 2014",
     keyPoints: ["Developed JavaScript tools for driNET.hubzero.org"],
-    languages: "",
+    languages: "PHP, JavaScript, HTML, CSS",
   },
   {
     title: "Web Developer",
@@ -74,7 +75,7 @@ export default [
     keyPoints: [
       "Worked with ArcGIS JavaScript API to develop interactive maps",
     ],
-    languages: "",
+    languages: "PHP, JavaScript, HTML, CSS",
   },
   {
     title: "Developer -> Senior Developer",
@@ -85,6 +86,6 @@ export default [
     keyPoints: [
       "Lead the design, development, and successful launch of rewritten web applications",
     ],
-    languages: "",
+    languages: "PHP, Javascript",
   },
 ];

@@ -68,13 +68,13 @@ export default {
     {
       display: "NativeScript-Vue",
       link: "",
-      enabled: true,
+      enabled: false,
       confidenceLevel: 4,
     },
     {
       display: "React Native",
       link: "",
-      enabled: true,
+      enabled: false,
       confidenceLevel: 3,
     },
   ],
@@ -86,9 +86,21 @@ export default {
       confidenceLevel: 8,
     },
     {
-      display: "Tailwind",
+      display: "Flex",
       link: "",
       enabled: true,
+      confidenceLevel: 7,
+    },
+    {
+      display: "Grid",
+      link: "",
+      enabled: true,
+      confidenceLevel: 6,
+    },
+    {
+      display: "Tailwind",
+      link: "",
+      enabled: false,
       confidenceLevel: 5,
     },
     {
@@ -101,7 +113,7 @@ export default {
       display: "Foundation",
       link: "",
       enabled: false,
-      confidenceLevel: 4,
+      confidenceLevel: 6,
     },
   ],
   [SkillGroupTypes.DATABASES]: [
@@ -114,13 +126,13 @@ export default {
     {
       display: "Redis",
       link: "",
-      enabled: false,
+      enabled: true,
       confidenceLevel: 7,
     },
     {
       display: "MongoDB",
       link: "",
-      enabled: false,
+      enabled: true,
       confidenceLevel: 6,
     },
   ],
@@ -138,12 +150,6 @@ export default {
       confidenceLevel: 9,
     },
     {
-      display: "Docker",
-      link: "",
-      enabled: true,
-      confidenceLevel: 6,
-    },
-    {
       display: "Vagrant",
       link: "",
       enabled: false,
@@ -158,6 +164,12 @@ export default {
   ],
   [SkillGroupTypes.DEV_OPS]: [
     {
+      display: "CI/CD",
+      link: "",
+      enabled: true,
+      confidenceLevel: 8,
+    },
+    {
       display: "Shell Scripting",
       link: "",
       enabled: true,
@@ -168,6 +180,12 @@ export default {
       link: "",
       enabled: true,
       confidenceLevel: 8,
+    },
+    {
+      display: "Docker",
+      link: "",
+      enabled: true,
+      confidenceLevel: 6,
     },
   ],
 };

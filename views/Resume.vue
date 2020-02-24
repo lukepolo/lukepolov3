@@ -4,8 +4,8 @@
     <div class="content--sidebar">
       <div class="box box-callout">
         <div class="box--header">Hello</div>
-        I'm a full stack developer based in Indianapolis, Indiana. I have over 8
-        years of full stack development experience. I contribute and maintain
+        I'm a full stack developer based in Indianapolis, Indiana. I have over
+        {{ yearsOfExperience }} years of full stack development experience. I contribute and maintain
         open source repositories such as LaraCart and VarieJS.
       </div>
 
@@ -52,6 +52,7 @@ import SkillGroup from "@components/resume/SkillGroup";
 import { SkillGroupTypes } from "@app/constants/SkillGroups";
 import Jobs from "@app/constants/Jobs";
 import MainNavigation from "@views/layouts/components/MainNavigation";
+import { differenceInYears } from 'date-fns'
 export default {
   components: {
     JobDetails,
@@ -65,6 +66,9 @@ export default {
     jobs() {
       return Jobs;
     },
+    yearsOfExperience() {
+      return differenceInYears(new Date(), new Date(2010, 8,1));
+    }
   },
 };
 </script>
