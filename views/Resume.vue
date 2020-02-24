@@ -7,7 +7,11 @@
         I'm a full stack developer based in Indianapolis, Indiana. I have over
         {{ yearsOfExperience }} years of full stack development experience. I
         contribute and maintain open source repositories such as LaraCart and
-        VarieJS.
+        <a target="_blank" href="https://varie.io?utm_source=resume">VarieJS</a>
+        . I also run a hobby project called
+        <a target="_blank" href="https://codepier.io?utm_source=resume"
+          >CodePier</a
+        >.
       </div>
 
       <div class="box">

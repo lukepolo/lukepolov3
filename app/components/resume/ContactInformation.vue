@@ -1,15 +1,15 @@
 <template>
   <div class="contact--info">
     <div class="contact--info-item">
-      <a href="https://github.com/lukepolo">
+      <a target="_blank" href="https://github.com/lukepolo">
         <i class="fab fa-github"></i>
       </a>
     </div>
     <div class="contact--info-item">
-      luke@lukepolo.com
+      <a href="mailto:luke@lukepolo.com">luke@lukepolo.com</a>
     </div>
     <div class="contact--info-item">
-      (260) 609-1511
+      <a href="tel:260-609-1511">(260) 609-1511</a>
     </div>
 
     <div class="contact--info-item">
@@ -62,6 +62,10 @@ export default {};
     font-size: 1.1em;
     padding-left: 15px;
     white-space: nowrap;
+
+    a {
+      color: $color-text-inverse-secondary;
+    }
 
     &:not(:first-child) {
       &:before {
