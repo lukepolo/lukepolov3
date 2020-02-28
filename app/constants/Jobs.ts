@@ -1,6 +1,6 @@
 export default [
   {
-    title: "Team Lead - UI / UX Developer",
+    title: "Team Lead - Senior Javascript Developer",
     company: "Indiana Interactive",
     location: "Indianapolis, IN",
     start_date: "November 2017",
