@@ -12,7 +12,6 @@
     "watch": "cross-env TS_NODE_PROJECT=\"node_modules/varie-bundler/webpack-tsconfig.json\" webpack-dev-server --mode development --progress --hot"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-pro": "^5.12.0",
     "date-fns": "^2.9.0",
     "husky": "^4.2.3",
     "pretty-quick": "^2.0.1",

@@ -3,49 +3,56 @@ export enum SkillGroupTypes {
   PHP = "PHP",
   TOOLS = "Tools",
   DEV_OPS = "DevOps",
+  Languages = "Languages",
   DATABASES = "Databases",
   JAVASCRIPT = "JavaScript",
 }
 
 export default {
-  [SkillGroupTypes.PHP]: [
+  [SkillGroupTypes.Languages]: [
     {
-      display: "Laravel",
-      link: "https://laravel.com/",
+      display: "TypeScript",
+      link: "",
       enabled: true,
       confidenceLevel: 9,
     },
     {
-      display: "FuelPHP",
+      display: "Javascript",
+      link: "",
+      enabled: true,
+      confidenceLevel: 9,
+    },
+    {
+      display: "GraphQL",
       link: "",
       enabled: true,
       confidenceLevel: 8,
     },
     {
-      display: "WordPress",
+      display: "PHP",
       link: "",
-      enabled: false,
+      enabled: true,
       confidenceLevel: 7,
     },
     {
-      display: "Joomla!",
+      display: "CSS",
       link: "",
-      enabled: false,
-      confidenceLevel: 5,
+      enabled: true,
+      confidenceLevel: 7,
     },
   ],
   [SkillGroupTypes.JAVASCRIPT]: [
+    {
+      display: "NodeJS",
+      link: "",
+      enabled: true,
+      confidenceLevel: 9,
+    },
     {
       display: "VueJS",
       link: "",
       enabled: true,
       confidenceLevel: 9,
-    },
-    {
-      display: "TypeScript",
-      link: "",
-      enabled: true,
-      confidenceLevel: 8,
     },
     {
       display: "Angular",
@@ -54,28 +61,10 @@ export default {
       confidenceLevel: 7,
     },
     {
-      display: "NodeJS",
+      display: "React",
       link: "",
       enabled: true,
-      confidenceLevel: 8,
-    },
-    {
-      display: "Socket.IO",
-      link: "",
-      enabled: false,
-      confidenceLevel: 9,
-    },
-    {
-      display: "NativeScript-Vue",
-      link: "",
-      enabled: false,
       confidenceLevel: 4,
-    },
-    {
-      display: "React Native",
-      link: "",
-      enabled: false,
-      confidenceLevel: 3,
     },
   ],
   [SkillGroupTypes.CSS]: [
@@ -124,6 +113,12 @@ export default {
       confidenceLevel: 9,
     },
     {
+      display: "Postgres",
+      link: "",
+      enabled: true,
+      confidenceLevel: 7,
+    },
+    {
       display: "Redis",
       link: "",
       enabled: true,
@@ -134,6 +129,14 @@ export default {
       link: "",
       enabled: true,
       confidenceLevel: 6,
+    },
+  ],
+  [SkillGroupTypes.PHP]: [
+    {
+      display: "Laravel",
+      link: "https://laravel.com/",
+      enabled: true,
+      confidenceLevel: 7,
     },
   ],
   [SkillGroupTypes.TOOLS]: [
@@ -150,12 +153,6 @@ export default {
       confidenceLevel: 9,
     },
     {
-      display: "Vagrant",
-      link: "",
-      enabled: false,
-      confidenceLevel: 6,
-    },
-    {
       display: "Gulp",
       link: "",
       enabled: false,
@@ -163,6 +160,12 @@ export default {
     },
   ],
   [SkillGroupTypes.DEV_OPS]: [
+    {
+      display: "Kubernetes",
+      link: "",
+      enabled: true,
+      confidenceLevel: 6,
+    },
     {
       display: "CI/CD",
       link: "",
@@ -173,18 +176,24 @@ export default {
       display: "Shell Scripting",
       link: "",
       enabled: true,
-      confidenceLevel: 7,
+      confidenceLevel: 5,
     },
     {
       display: "Server Mgmt.",
       link: "",
-      enabled: true,
-      confidenceLevel: 8,
+      enabled: false,
+      confidenceLevel: 7,
     },
     {
       display: "Docker",
       link: "",
       enabled: true,
+      confidenceLevel: 8,
+    },
+    {
+      display: "Vagrant",
+      link: "",
+      enabled: false,
       confidenceLevel: 6,
     },
   ],

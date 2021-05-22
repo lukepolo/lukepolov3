@@ -1,19 +1,31 @@
 export default [
   {
+    title: "Team Lead Engineer - Backend",
+    company: "Qumulex",
+    location: "Fishers, IN",
+    start_date: "May 2020",
+    end_date: "Present",
+    keyPoints: [
+      "Designed and Implemented Architecture Microservice Patterns",
+      "Built a kubernetes local dev tool that is used to setup Qumulex's infrastructure locally",
+      "Built a backend framework for microservices for consistent DX across services",
+    ],
+    languages: "NodeJS, Typescript, Postgres, GraphQL, WebSockets, Kubernetes",
+  },
+  {
     title: "Team Lead - Senior Javascript Developer",
     company: "Indiana Interactive",
     location: "Indianapolis, IN",
     start_date: "November 2017",
-    end_date: "Present",
+    end_date: "May 2020",
     keyPoints: [
       "Led teams building diverse web applications for the state of Indiana",
-      "Revamped process for bundling and deploying applications",
       "Designed and developed complex web applications that simplified the user's interactions",
       "Helped architect a new framework to build extensible applications",
       "Maintained frameworks and building tools centered on developer experience",
       "Revamped CI/CD pipeline for docker applications",
     ],
-    languages: "JavaScript, VueJS, Node, HTML, SCSS",
+    languages: "Typescript, VueJS, NodeJS, HTML, SCSS",
   },
   {
     title: "Senior Backend Web Developer",

@@ -22,11 +22,12 @@
 
       <div class="box">
         <div class="box--header">Skills</div>
-        <skill-group :skill-group="skillsGroupTypes.PHP"></skill-group>
+        <skill-group :skill-group="skillsGroupTypes.Languages"></skill-group>
         <skill-group :skill-group="skillsGroupTypes.JAVASCRIPT"></skill-group>
-        <skill-group :skill-group="skillsGroupTypes.CSS"></skill-group>
-        <skill-group :skill-group="skillsGroupTypes.DATABASES"></skill-group>
         <skill-group :skill-group="skillsGroupTypes.DEV_OPS"></skill-group>
+        <skill-group :skill-group="skillsGroupTypes.DATABASES"></skill-group>
+        <skill-group :skill-group="skillsGroupTypes.PHP"></skill-group>
+        <skill-group :skill-group="skillsGroupTypes.CSS"></skill-group>
         <skill-group :skill-group="skillsGroupTypes.TOOLS"></skill-group>
       </div>
 
