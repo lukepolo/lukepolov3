@@ -24,3 +24,9 @@ jobs:
           tags: |
             ghcr.io/${{ github.repository }}/lukepolo-v3:${{ github.sha }}
             ghcr.io/${{ github.repository }}/lukepolo-v3:latest
+      - name: Secure Webhook
+        uses: navied/secure-webhook@0.2.1
+        with:
+          url: https://hooks.lukepolo.com/deploy-lukepolo
+          data: '{ "sha": "${{ github.sha }}" }'
+          hmacSecret: ${{ secrets.HMAC_SECRET }}
