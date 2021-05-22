@@ -14,7 +14,7 @@ jobs:
       - name: Log in to GitHub Docker Registry
         uses: docker/login-action@v1
         with:
-          registry: docker.pkg.github.com
+          registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Build container image
@@ -22,5 +22,5 @@ jobs:
         with:
           push: true
           tags: |
-            docker.pkg.github.com/${{ github.repository }}/lukepolo-v3:${{ github.sha }}
-            docker.pkg.github.com/${{ github.repository }}/lukepolo-v3:latest
+            ghcr.io/${{ github.repository }}/lukepolo-v3:${{ github.sha }}
+            ghcr.io/${{ github.repository }}/lukepolo-v3:latest
