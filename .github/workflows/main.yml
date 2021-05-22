@@ -22,5 +22,5 @@ jobs:
         with:
           push: true
           tags: |
-            docker.pkg.github.com/${{ github.repository }}/octo-image:${{ github.sha }}
-            docker.pkg.github.com/${{ github.repository }}/octo-image:${{ github.ref }}
+            docker.pkg.github.com/${{ github.repository }}/lukepolo-v3:${{ github.sha }}
+            docker.pkg.github.com/${{ github.repository }}/lukepolo-v3:${{ github.ref }}
