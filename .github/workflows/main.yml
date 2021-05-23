@@ -28,5 +28,4 @@ jobs:
         uses: navied/secure-webhook@0.2.1
         with:
           url: https://hooks.lukepolo.com/deploy-lukepolo
-          data: '{ "sha": "${{ github.sha }}" }'
           hmacSecret: ${{ secrets.HMAC_SECRET }}
