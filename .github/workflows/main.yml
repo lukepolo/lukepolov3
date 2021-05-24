@@ -29,3 +29,4 @@ jobs:
         with:
           data: '{ "sha": "${{ github.sha }}" }'
           url: https://hooks.lukepolo.com/deploy-lukepolo
+          hmacSecret: ${{ secrets.HMAC_SECRET }}
