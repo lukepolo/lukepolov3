@@ -3,7 +3,7 @@ name: ci
 on:
   push:
     branches:
-      - 'master'
+      - "master"
 
 jobs:
   docker:
@@ -27,5 +27,5 @@ jobs:
       - name: Secure Webhook
         uses: navied/secure-webhook@0.2.1
         with:
+          data: '{ "sha": "${{ github.sha }}" }'
           url: https://hooks.lukepolo.com/deploy-lukepolo
-          hmacSecret: ${{ secrets.HMAC_SECRET }}
