@@ -14,7 +14,7 @@
         >
         and
         <a target="_blank" href="https://varie.io?utm_source=resume">VarieJS</a>
-        . I also run a developer deployment tool called
+        . I also created a developer deployment tool called
         <a target="_blank" href="https://codepier.io?utm_source=resume"
           >CodePier</a
         >.
