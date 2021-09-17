@@ -4,9 +4,12 @@
     <div class="content--sidebar">
       <div class="box box-callout">
         <div class="box--header">Hello</div>
-        I'm a full stack developer based in Indianapolis, Indiana. I have over
-        {{ yearsOfExperience }} years of full stack development experience. I
-        contribute and maintain open source repositories such as
+        I'm a full stack developer that focuses on developer experience. I have
+        over
+        {{ yearsOfExperience }} years of full stack development experience, with
+        over {{ yearsOfManagementExperience }}
+        years of mentoring and managing teams. I contribute to and maintain open
+        source repositories such as
         <a
           target="_blank"
           href="https://github.com/lukepolo/laracart?utm_source=resume"
@@ -25,12 +28,12 @@
 
         <div class="skills-wrapper">
           <skill-group :skill-group="skillsGroupTypes.Languages"></skill-group>
-          <skill-group :skill-group="skillsGroupTypes.JAVASCRIPT"></skill-group>
           <skill-group :skill-group="skillsGroupTypes.DEV_OPS"></skill-group>
           <skill-group :skill-group="skillsGroupTypes.DATABASES"></skill-group>
-          <skill-group :skill-group="skillsGroupTypes.CSS"></skill-group>
+          <skill-group
+            :skill-group="skillsGroupTypes.MarkUpLanguages"
+          ></skill-group>
           <skill-group :skill-group="skillsGroupTypes.TOOLS"></skill-group>
-          <skill-group :skill-group="skillsGroupTypes.PHP"></skill-group>
         </div>
       </div>
 
@@ -83,6 +86,9 @@ export default {
     },
     yearsOfExperience() {
       return differenceInYears(new Date(), new Date(2010, 8, 1));
+    },
+    yearsOfManagementExperience() {
+      return differenceInYears(new Date(), new Date(2016, 2, 1));
     },
   },
 };
