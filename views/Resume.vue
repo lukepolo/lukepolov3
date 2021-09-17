@@ -125,7 +125,7 @@ export default {
     grid-area: sidebar;
     margin: 30px 0 30px 30px;
     display: grid;
-    grid-template-rows: min-content min-content 1fr;
+    grid-template-rows: min-content min-content min-content;
 
     @include breakpoint(sm) {
       margin: 30px;
