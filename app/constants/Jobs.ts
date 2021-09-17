@@ -6,9 +6,9 @@ export default [
     start_date: "May 2020",
     end_date: "Present",
     keyPoints: [
-      "Created a kubernetes local development tool to create production-like environments locally, or in the cloud",
-      "Developed a backend framework to enable a consistent developer experience across microservices services",
-      "Designed and implemented microservice architecture patterns to help performance and scale the product",
+      "Created a kubernetes local development tool to create production-like environments",
+      "Developed a framework to enable a consistent developer experience across microservices",
+      "Designed and implemented microservice architecture patterns to help scale the product",
     ],
     languages: "NodeJS, Typescript, Postgres, GraphQL, WebSockets, Kubernetes",
   },

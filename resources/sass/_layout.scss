@@ -32,4 +32,10 @@ html {
     padding: 0;
     background-color: $color-background-content;
   }
+
+  @media print {
+    padding: 0;
+    background-color: white;
+    grid-template-columns: 0 minmax(350px, 1200px) 0;
+  }
 }

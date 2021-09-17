@@ -6,8 +6,8 @@
         <div class="box--header">Hello</div>
         I'm a full stack developer that focuses on developer experience. I have
         over
-        {{ yearsOfExperience }} years of full stack development experience, with
-        over {{ yearsOfManagementExperience }}
+        {{ yearsOfExperience }} years of development experience, with over
+        {{ yearsOfManagementExperience }}
         years of mentoring and managing teams. I contribute to and maintain open
         source repositories such as
         <a
@@ -30,9 +30,9 @@
           <skill-group :skill-group="skillsGroupTypes.Languages"></skill-group>
           <skill-group :skill-group="skillsGroupTypes.DEV_OPS"></skill-group>
           <skill-group :skill-group="skillsGroupTypes.DATABASES"></skill-group>
-          <skill-group
-            :skill-group="skillsGroupTypes.MarkUpLanguages"
-          ></skill-group>
+          <!--          <skill-group-->
+          <!--            :skill-group="skillsGroupTypes.MarkUpLanguages"-->
+          <!--          ></skill-group>-->
           <skill-group :skill-group="skillsGroupTypes.TOOLS"></skill-group>
         </div>
       </div>
@@ -98,7 +98,7 @@ export default {
 .content {
   grid-area: content;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 0.9fr 2fr;
   grid-template-rows: min-content auto;
   grid-template-areas:
     "nav nav"
@@ -115,7 +115,7 @@ export default {
 
   @media print {
     box-shadow: none;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 0.8fr 2fr;
     grid-template-areas:
       "nav nav"
       "sidebar main";
