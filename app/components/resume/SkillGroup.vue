@@ -9,12 +9,6 @@
           <div class="skills--item-name">
             {{ skill.display }}
           </div>
-          <!--          <div class="skills&#45;&#45;item-confidence">-->
-          <!--            <div-->
-          <!--              class="skills&#45;&#45;item-confidencePercent"-->
-          <!--              :style="{ width: `${skill.confidenceLevel * 10}%` }"-->
-          <!--            ></div>-->
-          <!--          </div>-->
         </div>
       </template>
     </div>

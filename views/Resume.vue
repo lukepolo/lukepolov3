@@ -22,13 +22,16 @@
 
       <div class="box">
         <div class="box--header">Skills</div>
-        <skill-group :skill-group="skillsGroupTypes.Languages"></skill-group>
-        <skill-group :skill-group="skillsGroupTypes.JAVASCRIPT"></skill-group>
-        <skill-group :skill-group="skillsGroupTypes.DEV_OPS"></skill-group>
-        <skill-group :skill-group="skillsGroupTypes.DATABASES"></skill-group>
-        <skill-group :skill-group="skillsGroupTypes.PHP"></skill-group>
-        <skill-group :skill-group="skillsGroupTypes.CSS"></skill-group>
-        <skill-group :skill-group="skillsGroupTypes.TOOLS"></skill-group>
+
+        <div class="skills-wrapper">
+          <skill-group :skill-group="skillsGroupTypes.Languages"></skill-group>
+          <skill-group :skill-group="skillsGroupTypes.JAVASCRIPT"></skill-group>
+          <skill-group :skill-group="skillsGroupTypes.DEV_OPS"></skill-group>
+          <skill-group :skill-group="skillsGroupTypes.DATABASES"></skill-group>
+          <skill-group :skill-group="skillsGroupTypes.CSS"></skill-group>
+          <skill-group :skill-group="skillsGroupTypes.TOOLS"></skill-group>
+          <skill-group :skill-group="skillsGroupTypes.PHP"></skill-group>
+        </div>
       </div>
 
       <div class="box">
@@ -182,5 +185,11 @@ export default {
     font-family: $font-family-header;
     font-size: 1.2em;
   }
+}
+
+.skills-wrapper {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-row-gap: 10px;
 }
 </style>
