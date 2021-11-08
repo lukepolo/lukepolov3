@@ -16,11 +16,10 @@
           >LaraCart</a
         >
         and
-        <a target="_blank" href="https://varie.io?utm_source=resume">VarieJS</a>
-        . I also created a developer deployment tool called
-        <a target="_blank" href="https://codepier.io?utm_source=resume"
-          >CodePier</a
-        >.
+        <a target="_blank" href="https://varie.lukepolo.com?utm_source=resume"
+          >VarieJS</a
+        >
+        .
       </div>
 
       <div class="box">
