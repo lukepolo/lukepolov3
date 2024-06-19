@@ -4,35 +4,23 @@
     <div class="content--sidebar">
       <div class="box box-callout">
         <div class="box--header">Hello</div>
-        I'm a full stack developer that focuses on developer experience. I have
-        over
-        {{ yearsOfExperience }} years of development experience, with over
-        {{ yearsOfManagementExperience }}
-        years of mentoring and managing teams. I contribute to and maintain open
-        source repositories such as
-        <a
-          target="_blank"
-          href="https://github.com/lukepolo/laracart?utm_source=resume"
-          >LaraCart</a
-        >
-        and
-        <a target="_blank" href="https://varie.lukepolo.com?utm_source=resume"
-          >VarieJS</a
-        >
-        .
+        With over {{ yearsOfExperience }} years of extensive development
+        experience, I am dedicated to improving developer workflows and
+        productivity. My expertise spans various technologies and methodologies,
+        allowing me to create efficient, user-friendly tools and processes that
+        enhance the overall developer experience.
       </div>
 
       <div class="box">
         <div class="box--header">Skills</div>
 
         <div class="skills-wrapper">
-          <skill-group :skill-group="skillsGroupTypes.Languages"></skill-group>
-          <skill-group :skill-group="skillsGroupTypes.DEV_OPS"></skill-group>
-          <skill-group :skill-group="skillsGroupTypes.DATABASES"></skill-group>
-          <!--          <skill-group-->
-          <!--            :skill-group="skillsGroupTypes.MarkUpLanguages"-->
-          <!--          ></skill-group>-->
-          <skill-group :skill-group="skillsGroupTypes.TOOLS"></skill-group>
+          <skill-group :skill-group="skillsGroupTypes.Backend"></skill-group>
+          <skill-group :skill-group="skillsGroupTypes.DevOps"></skill-group>
+          <skill-group :skill-group="skillsGroupTypes.Databases"></skill-group>
+          <skill-group :skill-group="skillsGroupTypes.Frontend"></skill-group>
+          <skill-group :skill-group="skillsGroupTypes.Concepts"></skill-group>
+          <skill-group :skill-group="skillsGroupTypes.AI"></skill-group>
         </div>
       </div>
 
@@ -85,9 +73,6 @@ export default {
     },
     yearsOfExperience() {
       return differenceInYears(new Date(), new Date(2010, 8, 1));
-    },
-    yearsOfManagementExperience() {
-      return differenceInYears(new Date(), new Date(2016, 2, 1));
     },
   },
 };
