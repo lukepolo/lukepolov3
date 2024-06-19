@@ -78,7 +78,7 @@ export default {
   ],
   [SkillGroupTypes.Databases]: [
     {
-      display: "Postgrespushm",
+      display: "Postgres",
       enabled: true,
     },
     {
