@@ -5,10 +5,10 @@
       <div class="box box-callout">
         <div class="box--header">Hello</div>
         With over {{ yearsOfExperience }} years of extensive development
-        experience, I am dedicated to improving developer workflows and
-        productivity. My expertise spans various technologies and methodologies,
-        allowing me to create efficient, user-friendly tools and processes that
-        enhance the overall developer experience.
+        experience, I am committed to optimizing developer workflows and
+        productivity. My expertise covers a wide range of technologies and
+        methodologies, enabling me to design efficient, user-friendly tools and
+        processes that enhance the overall developer experience.
       </div>
 
       <div class="box">
