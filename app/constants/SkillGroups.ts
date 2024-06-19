@@ -112,6 +112,10 @@ export default {
       enabled: true,
     },
     {
+      display: "WebRTC",
+      enabled: true,
+    },
+    {
       display: "Networking",
       enabled: true,
     },
