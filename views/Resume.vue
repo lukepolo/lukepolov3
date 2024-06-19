@@ -42,7 +42,17 @@
       <div class="box">
         <div class="box--header">Experience</div>
         <div class="job--container">
-          <template v-for="(job, index) in jobs">
+          <template v-for="(job, index) in jobs.page1">
+            <job-details :job="job" :key="index"></job-details>
+          </template>
+        </div>
+      </div>
+
+      <div style="height: 60px;"></div>
+      <div class="box">
+        <div class="box--header">Additional Experience</div>
+        <div class="job--container">
+          <template v-for="(job, index) in jobs.page2">
             <job-details :job="job" :key="index"></job-details>
           </template>
         </div>
