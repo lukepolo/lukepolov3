@@ -104,12 +104,6 @@ export default [
           "Delivered a high-performance online ordering platform capable of handling thousands of orders per day.",
       },
       {
-        label:
-          "Led Agile team to develop an online ordering platform with Laravel",
-        description:
-          "Directed a focused, Agile team to build a robust online ordering system using Laravel, ensuring efficient delivery.",
-      },
-      {
         label: "Developed dynamic workflows and designs for online ordering",
         description:
           "Created innovative workflows and user-friendly designs to enhance online ordering experiences.",
