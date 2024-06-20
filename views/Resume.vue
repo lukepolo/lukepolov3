@@ -4,35 +4,23 @@
     <div class="content--sidebar">
       <div class="box box-callout">
         <div class="box--header">Hello</div>
-        I'm a full stack developer that focuses on developer experience. I have
-        over
-        {{ yearsOfExperience }} years of development experience, with over
-        {{ yearsOfManagementExperience }}
-        years of mentoring and managing teams. I contribute to and maintain open
-        source repositories such as
-        <a
-          target="_blank"
-          href="https://github.com/lukepolo/laracart?utm_source=resume"
-          >LaraCart</a
-        >
-        and
-        <a target="_blank" href="https://varie.lukepolo.com?utm_source=resume"
-          >VarieJS</a
-        >
-        .
+        With over {{ yearsOfExperience }} years of extensive development
+        experience, I am committed to optimizing developer workflows and
+        productivity. My expertise covers a wide range of technologies and
+        methodologies, enabling me to design efficient, user-friendly tools and
+        processes that enhance the overall developer experience.
       </div>
 
       <div class="box">
         <div class="box--header">Skills</div>
 
         <div class="skills-wrapper">
-          <skill-group :skill-group="skillsGroupTypes.Languages"></skill-group>
-          <skill-group :skill-group="skillsGroupTypes.DEV_OPS"></skill-group>
-          <skill-group :skill-group="skillsGroupTypes.DATABASES"></skill-group>
-          <!--          <skill-group-->
-          <!--            :skill-group="skillsGroupTypes.MarkUpLanguages"-->
-          <!--          ></skill-group>-->
-          <skill-group :skill-group="skillsGroupTypes.TOOLS"></skill-group>
+          <skill-group :skill-group="skillsGroupTypes.Backend"></skill-group>
+          <skill-group :skill-group="skillsGroupTypes.DevOps"></skill-group>
+          <skill-group :skill-group="skillsGroupTypes.Databases"></skill-group>
+          <skill-group :skill-group="skillsGroupTypes.Frontend"></skill-group>
+          <skill-group :skill-group="skillsGroupTypes.Concepts"></skill-group>
+          <skill-group :skill-group="skillsGroupTypes.AI"></skill-group>
         </div>
       </div>
 
@@ -54,7 +42,17 @@
       <div class="box">
         <div class="box--header">Experience</div>
         <div class="job--container">
-          <template v-for="(job, index) in jobs">
+          <template v-for="(job, index) in jobs.page1">
+            <job-details :job="job" :key="index"></job-details>
+          </template>
+        </div>
+      </div>
+
+      <div style="height: 60px;"></div>
+      <div class="box">
+        <div class="box--header">Additional Experience</div>
+        <div class="job--container">
+          <template v-for="(job, index) in jobs.page2">
             <job-details :job="job" :key="index"></job-details>
           </template>
         </div>
@@ -85,9 +83,6 @@ export default {
     },
     yearsOfExperience() {
       return differenceInYears(new Date(), new Date(2010, 8, 1));
-    },
-    yearsOfManagementExperience() {
-      return differenceInYears(new Date(), new Date(2016, 2, 1));
     },
   },
 };

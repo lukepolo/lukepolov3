@@ -9,9 +9,15 @@
     <div class="job--subheader">{{ job.company }}, {{ job.location }}</div>
     <div class="job--content">
       <template v-for="(keyPoint, index) in job.keyPoints">
-        <div class="job--content-item" :key="index">
-          {{ keyPoint }}
-        </div>
+        <ul class="job--content-item" :key="index">
+          <template v-if="typeof keyPoint === 'object'">
+            <li class="job--content-item-label">{{ keyPoint.label }}</li>
+            {{ keyPoint.description }}
+          </template>
+          <template v-else>
+            {{ keyPoint }}
+          </template>
+        </ul>
       </template>
     </div>
   </div>
@@ -66,10 +72,16 @@ export default {
   }
 
   &--content {
-    margin: 5px 0 5px 15px;
     padding-bottom: 5px;
 
     &-item {
+      padding-inline-start: 30px;
+      font-size: 12px;
+      &-label {
+        font-size: 16px;
+        margin: 5px 0 5px 0;
+      }
+
       &:not(:last-child) {
         margin-bottom: 5px;
       }

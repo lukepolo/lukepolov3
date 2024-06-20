@@ -1,9 +1,7 @@
 <template>
   <nav class="content--nav">
     <div class="contact">
-      <div class="contact--name">
-        Luke Policinski
-      </div>
+      <div class="contact--name">Luke Policinski</div>
 
       <contact-information></contact-information>
     </div>

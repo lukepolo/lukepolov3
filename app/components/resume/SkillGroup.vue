@@ -40,7 +40,7 @@ export default {
   }
 
   &--group {
-    margin: 0 0 10px 15px;
+    margin: 5px 0;
   }
 
   &--item {
